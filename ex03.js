@@ -2,6 +2,11 @@
 
 function getFullNames(users) {
   // your code here
+  let fullNames = [];
+  for (let i = 0; i < users.length; i++) {
+    fullNames.push(`${users[i].firstName} ${users[i].lastName}`);
+  }
+  return fullNames;
 }
 
 console.log(getFullNames([{ firstName: 'John', lastName: 'Doe' }, { firstName: 'Jane', lastName: 'Doe' }])) // ['John Doe', 'Jane Doe']

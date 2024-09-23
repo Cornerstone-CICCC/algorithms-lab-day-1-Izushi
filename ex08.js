@@ -2,6 +2,14 @@
 
 function longestWord(text) {
   // your code here
+  let words = text.split(' ');
+  let longest = '';
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length > longest.length) {
+      longest = words[i];
+    }
+  }
+  return longest;
 }
 
-console.error.longestWord('The quick brown fox jumps over the lazy dog') // 'jumps'
+console.log(longestWord('The quick brown poodle jumps over the lazy dog')) // 'jumps'
